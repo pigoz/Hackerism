@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BB5A8BE15E8F238002318E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BD15E8F238002318E0 /* UIKit.framework */; };
+		7BB5A8C015E8F238002318E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BF15E8F238002318E0 /* Foundation.framework */; };
+		7BB5A8C215E8F238002318E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8C115E8F238002318E0 /* CoreGraphics.framework */; };
+		7BB5A8C815E8F238002318E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BB5A8C615E8F238002318E0 /* InfoPlist.strings */; };
+		7BB5A8CA15E8F238002318E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5A8C915E8F238002318E0 /* main.m */; };
+		7BB5A8CE15E8F238002318E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5A8CD15E8F238002318E0 /* AppDelegate.m */; };
+		7BB5A8D615E8F239002318E0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8D515E8F239002318E0 /* SenTestingKit.framework */; };
+		7BB5A8D715E8F239002318E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BD15E8F238002318E0 /* UIKit.framework */; };
+		7BB5A8D815E8F239002318E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BF15E8F238002318E0 /* Foundation.framework */; };
+		7BB5A8E015E8F239002318E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BB5A8DE15E8F239002318E0 /* InfoPlist.strings */; };
+		7BB5A8E315E8F239002318E0 /* HackerismTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5A8E215E8F239002318E0 /* HackerismTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BB5A8D915E8F239002318E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BB5A8B015E8F238002318E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BB5A8B815E8F238002318E0;
+			remoteInfo = Hackerism;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BB5A8B915E8F238002318E0 /* Hackerism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackerism.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB5A8BD15E8F238002318E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7BB5A8BF15E8F238002318E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7BB5A8C115E8F238002318E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7BB5A8C515E8F238002318E0 /* Hackerism-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hackerism-Info.plist"; sourceTree = "<group>"; };
+		7BB5A8C715E8F238002318E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BB5A8C915E8F238002318E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BB5A8CB15E8F238002318E0 /* Hackerism-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hackerism-Prefix.pch"; sourceTree = "<group>"; };
+		7BB5A8CC15E8F238002318E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BB5A8CD15E8F238002318E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7BB5A8D415E8F239002318E0 /* HackerismTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerismTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB5A8D515E8F239002318E0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7BB5A8DD15E8F239002318E0 /* HackerismTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HackerismTests-Info.plist"; sourceTree = "<group>"; };
+		7BB5A8DF15E8F239002318E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BB5A8E115E8F239002318E0 /* HackerismTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HackerismTests.h; sourceTree = "<group>"; };
+		7BB5A8E215E8F239002318E0 /* HackerismTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerismTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BB5A8B615E8F238002318E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB5A8BE15E8F238002318E0 /* UIKit.framework in Frameworks */,
+				7BB5A8C015E8F238002318E0 /* Foundation.framework in Frameworks */,
+				7BB5A8C215E8F238002318E0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB5A8D015E8F239002318E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB5A8D615E8F239002318E0 /* SenTestingKit.framework in Frameworks */,
+				7BB5A8D715E8F239002318E0 /* UIKit.framework in Frameworks */,
+				7BB5A8D815E8F239002318E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BB5A8AE15E8F238002318E0 = {
+			isa = PBXGroup;
+			children = (
+				7BB5A8C315E8F238002318E0 /* Hackerism */,
+				7BB5A8DB15E8F239002318E0 /* HackerismTests */,
+				7BB5A8BC15E8F238002318E0 /* Frameworks */,
+				7BB5A8BA15E8F238002318E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BB5A8BA15E8F238002318E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BB5A8B915E8F238002318E0 /* Hackerism.app */,
+				7BB5A8D415E8F239002318E0 /* HackerismTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BB5A8BC15E8F238002318E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BB5A8BD15E8F238002318E0 /* UIKit.framework */,
+				7BB5A8BF15E8F238002318E0 /* Foundation.framework */,
+				7BB5A8C115E8F238002318E0 /* CoreGraphics.framework */,
+				7BB5A8D515E8F239002318E0 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BB5A8C315E8F238002318E0 /* Hackerism */ = {
+			isa = PBXGroup;
+			children = (
+				7BB5A8CC15E8F238002318E0 /* AppDelegate.h */,
+				7BB5A8CD15E8F238002318E0 /* AppDelegate.m */,
+				7BB5A8C415E8F238002318E0 /* Supporting Files */,
+			);
+			path = Hackerism;
+			sourceTree = "<group>";
+		};
+		7BB5A8C415E8F238002318E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BB5A8C515E8F238002318E0 /* Hackerism-Info.plist */,
+				7BB5A8C615E8F238002318E0 /* InfoPlist.strings */,
+				7BB5A8C915E8F238002318E0 /* main.m */,
+				7BB5A8CB15E8F238002318E0 /* Hackerism-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BB5A8DB15E8F239002318E0 /* HackerismTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BB5A8E115E8F239002318E0 /* HackerismTests.h */,
+				7BB5A8E215E8F239002318E0 /* HackerismTests.m */,
+				7BB5A8DC15E8F239002318E0 /* Supporting Files */,
+			);
+			path = HackerismTests;
+			sourceTree = "<group>";
+		};
+		7BB5A8DC15E8F239002318E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BB5A8DD15E8F239002318E0 /* HackerismTests-Info.plist */,
+				7BB5A8DE15E8F239002318E0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BB5A8B815E8F238002318E0 /* Hackerism */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB5A8E615E8F239002318E0 /* Build configuration list for PBXNativeTarget "Hackerism" */;
+			buildPhases = (
+				7BB5A8B515E8F238002318E0 /* Sources */,
+				7BB5A8B615E8F238002318E0 /* Frameworks */,
+				7BB5A8B715E8F238002318E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hackerism;
+			productName = Hackerism;
+			productReference = 7BB5A8B915E8F238002318E0 /* Hackerism.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BB5A8D315E8F239002318E0 /* HackerismTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB5A8E915E8F239002318E0 /* Build configuration list for PBXNativeTarget "HackerismTests" */;
+			buildPhases = (
+				7BB5A8CF15E8F239002318E0 /* Sources */,
+				7BB5A8D015E8F239002318E0 /* Frameworks */,
+				7BB5A8D115E8F239002318E0 /* Resources */,
+				7BB5A8D215E8F239002318E0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BB5A8DA15E8F239002318E0 /* PBXTargetDependency */,
+			);
+			name = HackerismTests;
+			productName = HackerismTests;
+			productReference = 7BB5A8D415E8F239002318E0 /* HackerismTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BB5A8B015E8F238002318E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Stefano Pigozzi";
+			};
+			buildConfigurationList = 7BB5A8B315E8F238002318E0 /* Build configuration list for PBXProject "Hackerism" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7BB5A8AE15E8F238002318E0;
+			productRefGroup = 7BB5A8BA15E8F238002318E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BB5A8B815E8F238002318E0 /* Hackerism */,
+				7BB5A8D315E8F239002318E0 /* HackerismTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BB5A8B715E8F238002318E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB5A8C815E8F238002318E0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB5A8D115E8F239002318E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB5A8E015E8F239002318E0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BB5A8D215E8F239002318E0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BB5A8B515E8F238002318E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB5A8CA15E8F238002318E0 /* main.m in Sources */,
+				7BB5A8CE15E8F238002318E0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB5A8CF15E8F239002318E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB5A8E315E8F239002318E0 /* HackerismTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BB5A8DA15E8F239002318E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BB5A8B815E8F238002318E0 /* Hackerism */;
+			targetProxy = 7BB5A8D915E8F239002318E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BB5A8C615E8F238002318E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BB5A8C715E8F238002318E0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7BB5A8DE15E8F239002318E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BB5A8DF15E8F239002318E0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BB5A8E415E8F239002318E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BB5A8E515E8F239002318E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BB5A8E715E8F239002318E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackerism/Hackerism-Prefix.pch";
+				INFOPLIST_FILE = "Hackerism/Hackerism-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7BB5A8E815E8F239002318E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackerism/Hackerism-Prefix.pch";
+				INFOPLIST_FILE = "Hackerism/Hackerism-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7BB5A8EA15E8F239002318E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hackerism.app/Hackerism";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackerism/Hackerism-Prefix.pch";
+				INFOPLIST_FILE = "HackerismTests/HackerismTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7BB5A8EB15E8F239002318E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hackerism.app/Hackerism";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackerism/Hackerism-Prefix.pch";
+				INFOPLIST_FILE = "HackerismTests/HackerismTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BB5A8B315E8F238002318E0 /* Build configuration list for PBXProject "Hackerism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB5A8E415E8F239002318E0 /* Debug */,
+				7BB5A8E515E8F239002318E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB5A8E615E8F239002318E0 /* Build configuration list for PBXNativeTarget "Hackerism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB5A8E715E8F239002318E0 /* Debug */,
+				7BB5A8E815E8F239002318E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7BB5A8E915E8F239002318E0 /* Build configuration list for PBXNativeTarget "HackerismTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB5A8EA15E8F239002318E0 /* Debug */,
+				7BB5A8EB15E8F239002318E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BB5A8B015E8F238002318E0 /* Project object */;
+}
