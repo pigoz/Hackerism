@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7B31FA9015E902ED00AD756B /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B31FA8F15E902ED00AD756B /* iPhone.storyboard */; };
+		7B84809E15E93F2600997570 /* logo-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84809C15E93F2600997570 /* logo-iphone.png */; };
+		7B84809F15E93F2600997570 /* logo-iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84809D15E93F2600997570 /* logo-iphone@2x.png */; };
 		7BB5A8BE15E8F238002318E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BD15E8F238002318E0 /* UIKit.framework */; };
 		7BB5A8C015E8F238002318E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BF15E8F238002318E0 /* Foundation.framework */; };
 		7BB5A8C215E8F238002318E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8C115E8F238002318E0 /* CoreGraphics.framework */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		2EA13D426446460D91633F3C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B31FA8F15E902ED00AD756B /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		7B84809C15E93F2600997570 /* logo-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-iphone.png"; sourceTree = "<group>"; };
+		7B84809D15E93F2600997570 /* logo-iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-iphone@2x.png"; sourceTree = "<group>"; };
 		7BB5A8B915E8F238002318E0 /* Hackerism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackerism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB5A8BD15E8F238002318E0 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BB5A8BF15E8F238002318E0 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,11 +84,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B31FA8B15E901F900AD756B /* controllers */ = {
+		7B31FA8B15E901F900AD756B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 			);
+			name = Controllers;
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		7B84809B15E93F0B00997570 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B84809C15E93F2600997570 /* logo-iphone.png */,
+				7B84809D15E93F2600997570 /* logo-iphone@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7BB5A8AE15E8F238002318E0 = {
@@ -123,7 +137,8 @@
 		7BB5A8C315E8F238002318E0 /* Hackerism */ = {
 			isa = PBXGroup;
 			children = (
-				7B31FA8B15E901F900AD756B /* controllers */,
+				7B84809B15E93F0B00997570 /* Resources */,
+				7B31FA8B15E901F900AD756B /* Controllers */,
 				7BB5A8CC15E8F238002318E0 /* AppDelegate.h */,
 				7BB5A8CD15E8F238002318E0 /* AppDelegate.m */,
 				7BB5A8C415E8F238002318E0 /* Supporting Files */,
@@ -236,6 +251,8 @@
 			files = (
 				7BB5A8C815E8F238002318E0 /* InfoPlist.strings in Resources */,
 				7B31FA9015E902ED00AD756B /* iPhone.storyboard in Resources */,
+				7B84809E15E93F2600997570 /* logo-iphone.png in Resources */,
+				7B84809F15E93F2600997570 /* logo-iphone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +403,7 @@
 				GCC_PREFIX_HEADER = "Hackerism/Hackerism-Prefix.pch";
 				INFOPLIST_FILE = "Hackerism/Hackerism-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,6 +416,7 @@
 				GCC_PREFIX_HEADER = "Hackerism/Hackerism-Prefix.pch";
 				INFOPLIST_FILE = "Hackerism/Hackerism-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
