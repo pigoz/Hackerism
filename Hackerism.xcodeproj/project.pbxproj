@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7B31FA9015E902ED00AD756B /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B31FA8F15E902ED00AD756B /* iPhone.storyboard */; };
+		7B67042D15EA7D33000B7EA7 /* NetworkHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B67042C15EA7D33000B7EA7 /* NetworkHUD.m */; };
+		7B67043115EA7EED000B7EA7 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67042F15EA7EED000B7EA7 /* error.png */; };
+		7B67043215EA7EED000B7EA7 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043015EA7EED000B7EA7 /* error@2x.png */; };
 		7B84809E15E93F2600997570 /* logo-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84809C15E93F2600997570 /* logo-iphone.png */; };
 		7B84809F15E93F2600997570 /* logo-iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84809D15E93F2600997570 /* logo-iphone@2x.png */; };
 		7BB5A8BE15E8F238002318E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BD15E8F238002318E0 /* UIKit.framework */; };
@@ -21,6 +24,9 @@
 		7BB5A8D815E8F239002318E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BF15E8F238002318E0 /* Foundation.framework */; };
 		7BB5A8E015E8F239002318E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BB5A8DE15E8F239002318E0 /* InfoPlist.strings */; };
 		7BB5A8E315E8F239002318E0 /* HackerismTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5A8E215E8F239002318E0 /* HackerismTests.m */; };
+		7BB7380A15EA344000B1DAEB /* NewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7380915EA344000B1DAEB /* NewsListController.m */; };
+		7BB7380C15EA698600B1DAEB /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BB7380B15EA698600B1DAEB /* NewsCell.xib */; };
+		7BB7381015EA6FD300B1DAEB /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7380F15EA6FD300B1DAEB /* NewsCell.m */; };
 		A72A35D43A914FBBB539C8C1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA13D426446460D91633F3C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +43,10 @@
 /* Begin PBXFileReference section */
 		2EA13D426446460D91633F3C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B31FA8F15E902ED00AD756B /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		7B67042B15EA7D33000B7EA7 /* NetworkHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHUD.h; sourceTree = "<group>"; };
+		7B67042C15EA7D33000B7EA7 /* NetworkHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHUD.m; sourceTree = "<group>"; };
+		7B67042F15EA7EED000B7EA7 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		7B67043015EA7EED000B7EA7 /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
 		7B84809C15E93F2600997570 /* logo-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-iphone.png"; sourceTree = "<group>"; };
 		7B84809D15E93F2600997570 /* logo-iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-iphone@2x.png"; sourceTree = "<group>"; };
 		7BB5A8B915E8F238002318E0 /* Hackerism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackerism.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +66,11 @@
 		7BB5A8E115E8F239002318E0 /* HackerismTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HackerismTests.h; sourceTree = "<group>"; };
 		7BB5A8E215E8F239002318E0 /* HackerismTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerismTests.m; sourceTree = "<group>"; };
 		7BB5A8EC15E8FB40002318E0 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7BB7380815EA344000B1DAEB /* NewsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListController.h; path = Hackerism/Controllers/NewsListController.h; sourceTree = SOURCE_ROOT; };
+		7BB7380915EA344000B1DAEB /* NewsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListController.m; path = Hackerism/Controllers/NewsListController.m; sourceTree = SOURCE_ROOT; };
+		7BB7380B15EA698600B1DAEB /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		7BB7380E15EA6FD300B1DAEB /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		7BB7380F15EA6FD300B1DAEB /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		D3827FE112D7439C9F984E43 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -87,6 +102,8 @@
 		7B31FA8B15E901F900AD756B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7BB7380815EA344000B1DAEB /* NewsListController.h */,
+				7BB7380915EA344000B1DAEB /* NewsListController.m */,
 			);
 			name = Controllers;
 			path = controllers;
@@ -95,6 +112,8 @@
 		7B84809B15E93F0B00997570 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B67042F15EA7EED000B7EA7 /* error.png */,
+				7B67043015EA7EED000B7EA7 /* error@2x.png */,
 				7B84809C15E93F2600997570 /* logo-iphone.png */,
 				7B84809D15E93F2600997570 /* logo-iphone@2x.png */,
 			);
@@ -137,12 +156,14 @@
 		7BB5A8C315E8F238002318E0 /* Hackerism */ = {
 			isa = PBXGroup;
 			children = (
+				7BB7380D15EA6BB600B1DAEB /* Views */,
 				7B84809B15E93F0B00997570 /* Resources */,
 				7B31FA8B15E901F900AD756B /* Controllers */,
 				7BB5A8CC15E8F238002318E0 /* AppDelegate.h */,
 				7BB5A8CD15E8F238002318E0 /* AppDelegate.m */,
 				7BB5A8C415E8F238002318E0 /* Supporting Files */,
 				7B31FA8F15E902ED00AD756B /* iPhone.storyboard */,
+				7BB7380B15EA698600B1DAEB /* NewsCell.xib */,
 			);
 			path = Hackerism;
 			sourceTree = "<group>";
@@ -175,6 +196,17 @@
 				7BB5A8DE15E8F239002318E0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BB7380D15EA6BB600B1DAEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B67042B15EA7D33000B7EA7 /* NetworkHUD.h */,
+				7B67042C15EA7D33000B7EA7 /* NetworkHUD.m */,
+				7BB7380E15EA6FD300B1DAEB /* NewsCell.h */,
+				7BB7380F15EA6FD300B1DAEB /* NewsCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +285,9 @@
 				7B31FA9015E902ED00AD756B /* iPhone.storyboard in Resources */,
 				7B84809E15E93F2600997570 /* logo-iphone.png in Resources */,
 				7B84809F15E93F2600997570 /* logo-iphone@2x.png in Resources */,
+				7BB7380C15EA698600B1DAEB /* NewsCell.xib in Resources */,
+				7B67043115EA7EED000B7EA7 /* error.png in Resources */,
+				7B67043215EA7EED000B7EA7 /* error@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +338,9 @@
 			files = (
 				7BB5A8CA15E8F238002318E0 /* main.m in Sources */,
 				7BB5A8CE15E8F238002318E0 /* AppDelegate.m in Sources */,
+				7BB7380A15EA344000B1DAEB /* NewsListController.m in Sources */,
+				7BB7381015EA6FD300B1DAEB /* NewsCell.m in Sources */,
+				7B67042D15EA7D33000B7EA7 /* NetworkHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
