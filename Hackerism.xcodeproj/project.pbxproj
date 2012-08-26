@@ -11,6 +11,8 @@
 		7B67042D15EA7D33000B7EA7 /* NetworkHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B67042C15EA7D33000B7EA7 /* NetworkHUD.m */; };
 		7B67043115EA7EED000B7EA7 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67042F15EA7EED000B7EA7 /* error.png */; };
 		7B67043215EA7EED000B7EA7 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043015EA7EED000B7EA7 /* error@2x.png */; };
+		7B67043F15EACF58000B7EA7 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043D15EACF58000B7EA7 /* whiteArrow.png */; };
+		7B67044015EACF58000B7EA7 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043E15EACF58000B7EA7 /* whiteArrow@2x.png */; };
 		7B84809E15E93F2600997570 /* logo-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84809C15E93F2600997570 /* logo-iphone.png */; };
 		7B84809F15E93F2600997570 /* logo-iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84809D15E93F2600997570 /* logo-iphone@2x.png */; };
 		7BB5A8BE15E8F238002318E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BD15E8F238002318E0 /* UIKit.framework */; };
@@ -47,6 +49,8 @@
 		7B67042C15EA7D33000B7EA7 /* NetworkHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHUD.m; sourceTree = "<group>"; };
 		7B67042F15EA7EED000B7EA7 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 		7B67043015EA7EED000B7EA7 /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
+		7B67043D15EACF58000B7EA7 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		7B67043E15EACF58000B7EA7 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 		7B84809C15E93F2600997570 /* logo-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-iphone.png"; sourceTree = "<group>"; };
 		7B84809D15E93F2600997570 /* logo-iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-iphone@2x.png"; sourceTree = "<group>"; };
 		7BB5A8B915E8F238002318E0 /* Hackerism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackerism.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,8 @@
 		7B84809B15E93F0B00997570 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B67043D15EACF58000B7EA7 /* whiteArrow.png */,
+				7B67043E15EACF58000B7EA7 /* whiteArrow@2x.png */,
 				7B67042F15EA7EED000B7EA7 /* error.png */,
 				7B67043015EA7EED000B7EA7 /* error@2x.png */,
 				7B84809C15E93F2600997570 /* logo-iphone.png */,
@@ -288,6 +294,8 @@
 				7BB7380C15EA698600B1DAEB /* NewsCell.xib in Resources */,
 				7B67043115EA7EED000B7EA7 /* error.png in Resources */,
 				7B67043215EA7EED000B7EA7 /* error@2x.png in Resources */,
+				7B67043F15EACF58000B7EA7 /* whiteArrow.png in Resources */,
+				7B67044015EACF58000B7EA7 /* whiteArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
