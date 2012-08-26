@@ -399,10 +399,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3827FE112D7439C9F984E43 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Hacker";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Hacker";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hackerism/Hackerism-Prefix.pch";
 				INFOPLIST_FILE = "Hackerism/Hackerism-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -412,10 +416,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3827FE112D7439C9F984E43 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Hacker";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Hacker";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hackerism/Hackerism-Prefix.pch";
 				INFOPLIST_FILE = "Hackerism/Hackerism-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
