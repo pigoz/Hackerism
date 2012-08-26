@@ -2,7 +2,7 @@
 
 @implementation NewsCell
 @synthesize title = _title;
-@synthesize subtitle = _subtitle;
+@synthesize time = _time;
 @synthesize details = _details;
 @synthesize url = _url;
 

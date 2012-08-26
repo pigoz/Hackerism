@@ -7,24 +7,32 @@
 @implementation NewsListController
 @synthesize items = _items;
 
+#define HOME_URL @"http://hndroidapi.appspot.com/news/format/json/page/?appid=hackerism"
+
 - (void) reloadData {
-    NSURL *url = [NSURL URLWithString:@"http://api.ihackernews.com/page"];
+    NSURL *url = [NSURL URLWithString:HOME_URL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFJSONRequestOperation *fop = [AFJSONRequestOperation
         JSONRequestOperationWithRequest:request
-                                success:^(NSURLRequest *req, NSHTTPURLResponse* resp, id json) {
-                                    self.items = [(NSDictionary *)json objectForKey:@"items"];
-                                    [(UITableView *)self.view reloadData];
-                                }
-                                failure:^(NSURLRequest *req, NSHTTPURLResponse *resp, NSError *error, id json) {
-                                    [[NetworkHUD networkFailure:self.navigationController.view] show:YES];
-                                }];
+        success:^(NSURLRequest *req, NSHTTPURLResponse* resp, id json) {
+            self.items = [(NSDictionary *)json objectForKey:@"items"];
+            [(UITableView *)self.view reloadData];
+        }
+        failure:^(NSURLRequest *req, NSHTTPURLResponse *resp, NSError *error, id json) {
+            [[NetworkHUD networkFailure:self.navigationController.view] show:YES];
+        }];
     [fop start];
 }
 
 - (void) viewDidLoad
 {
     [self reloadData];
+}
+
+- (NSString *) shortPostedAgo: (NSString *) postedAgo
+{
+    NSArray *words = [postedAgo componentsSeparatedByString:@" "];
+    return [NSString stringWithFormat:@"%@%c", words[0], [words[1] characterAtIndex:0]];
 }
 
 #pragma mark - UITableDataViewsource methods
@@ -42,11 +50,10 @@
     
     NSDictionary *newsItem = self.items[indexPath.row];
     cell.title.text = newsItem[@"title"];
-    cell.subtitle.text = [NSString stringWithFormat:@"%@ Points - %@ Comments",
-                                 newsItem[@"points"], newsItem[@"commentCount"]];
-    cell.details.text = [NSString stringWithFormat:@"Posted by %@, %@",
-                          newsItem[@"postedBy"], newsItem[@"postedAgo"]];
-    
+    cell.time.text = [self shortPostedAgo:newsItem[@"time"]];
+    cell.details.text = [NSString
+         stringWithFormat:@"@%@, %@ - %@",
+         newsItem[@"user"], newsItem[@"score"], newsItem[@"comments"]];
     cell.url.text = newsItem[@"url"];
     return cell;
 }
