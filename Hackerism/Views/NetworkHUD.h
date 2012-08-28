@@ -2,5 +2,8 @@
 #import "MBProgressHUD.h"
 
 @interface NetworkHUD : NSObject
-+ (MBProgressHUD *) networkFailure:(UIView *)parentView;
+@property(nonatomic, strong) MBProgressHUD *hud;
+- (void)connectToParentView:(UIView *)parentView;
+- (void)handleHUDTap:(UITapGestureRecognizer *)gr;
+- (void)show;
 @end

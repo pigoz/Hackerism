@@ -1,8 +1,10 @@
 #import <UIKit/UIKit.h>
 #import "EGORefreshTableHeaderView.h"
+#import "../Views/NetworkHUD.h"
 
 @interface NewsListController : UITableViewController <UITableViewDataSource, UITableViewDelegate, EGORefreshTableHeaderDelegate>
-@property (nonatomic, assign, getter=isReloading) BOOL reloading;
-@property (nonatomic, retain) NSArray *items;
-@property (nonatomic, retain) EGORefreshTableHeaderView *refreshHeaderView;
+@property(nonatomic, assign, getter=isReloading) BOOL reloading;
+@property(nonatomic, retain) NSArray *items;
+@property(nonatomic, retain) EGORefreshTableHeaderView *refreshHeaderView;
+@property(nonatomic, retain) NetworkHUD *hud;
 @end

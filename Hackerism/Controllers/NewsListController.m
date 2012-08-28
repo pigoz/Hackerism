@@ -1,17 +1,17 @@
 #import "NewsListController.h"
 #import "AFNetworking.h"
-
 #import "../Views/NewsCell.h"
-#import "../Views/NetworkHUD.h"
 
 @implementation NewsListController
 @synthesize items = _items;
 @synthesize refreshHeaderView = _refreshHeaderView;
 @synthesize reloading = _reloading;
+@synthesize hud = _hud;
 
 #define HOME_URL @"http://hndroidapi.appspot.com/news/format/json/page/?appid=hackerism"
 
-- (void) reloadData {
+- (void)reloadData
+{
     [self startReloadTableViewDataSource];
     NSURL *url = [NSURL URLWithString:HOME_URL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -23,16 +23,20 @@
             [self doneLoadingTableViewData:NO];
         }
         failure:^(NSURLRequest *req, NSHTTPURLResponse *resp, NSError *error, id json) {
-            [[NetworkHUD networkFailure:self.navigationController.view] show:YES];
+            if (!self.hud) {
+                self.hud = [NetworkHUD new];
+                [self.hud connectToParentView:self.navigationController.view];
+            }
+            [self.hud show];
             [self doneLoadingTableViewData:YES];
         }];
     [fop start];
 }
 
-- (void) viewDidLoad
+- (void)viewDidLoad
 {
     [self reloadData];
-    
+
     if (_refreshHeaderView == nil) {
 		EGORefreshTableHeaderView *thview = [[EGORefreshTableHeaderView alloc]
             initWithFrame:CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height,
@@ -43,7 +47,7 @@
 	}
 }
 
-- (NSString *) shortPostedAgo: (NSString *) postedAgo
+- (NSString *)shortPostedAgo: (NSString *) postedAgo
 {
     NSArray *words = [postedAgo componentsSeparatedByString:@" "];
     return [NSString stringWithFormat:@"%@%c", words[0], [words[1] characterAtIndex:0]];
@@ -73,7 +77,8 @@
 }
 
 #pragma mark - Data Source Loading / Reloading Methods
-- (void)startReloadTableViewDataSource {
+- (void)startReloadTableViewDataSource
+{
     self.reloading = YES;
 }
 
@@ -81,21 +86,19 @@
 {
     if (!error) [_refreshHeaderView refreshLastUpdatedDate];
     self.reloading = NO;
-	[self.refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
+    [self.refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
 }
 
 
 #pragma mark - UIScrollViewDelegate Methods
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
-	[self.refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
-    
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self.refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
 }
 
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    
-	[self.refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
-    
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    [self.refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
 }
 
 #pragma mark - EGORefreshTableHeaderDelegate methods
@@ -109,10 +112,9 @@
     return self.isReloading;
 }
 
-- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view{
-    
-	return [NSDate date]; // should return date data source was last changed
-    
+- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view
+{
+    return [NSDate date];
 }
 
 @end

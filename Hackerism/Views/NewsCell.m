@@ -6,7 +6,7 @@
 @synthesize details = _details;
 @synthesize url = _url;
 
-+ (NewsCell *) fromNib
++ (NewsCell *)fromNib
 {
     NSArray *nibFileEntries = [[NSBundle mainBundle] loadNibNamed:@"NewsCell" owner:nil options:nil];
     return nibFileEntries[0];
