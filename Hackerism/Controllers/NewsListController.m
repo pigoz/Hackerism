@@ -38,12 +38,12 @@
     [self reloadData];
 
     if (_refreshHeaderView == nil) {
-		EGORefreshTableHeaderView *thview = [[EGORefreshTableHeaderView alloc]
+        EGORefreshTableHeaderView *thview = [[EGORefreshTableHeaderView alloc]
             initWithFrame:CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height,
                                      self.view.frame.size.width, self.tableView.bounds.size.height)];
-		thview.delegate = self;
-		[self.tableView addSubview:thview];
-		_refreshHeaderView = thview;
+        thview.delegate = self;
+        [self.tableView addSubview:thview];
+        _refreshHeaderView = thview;
 	}
 }
 
