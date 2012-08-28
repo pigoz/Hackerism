@@ -25,8 +25,6 @@
 
 - (void)handleHUDTap:(UITapGestureRecognizer *)gr
 {
-    NSLog(@"tap1");
     [self.hud hide:NO];
-    NSLog(@"tap2");
 }
 @end
