@@ -1,4 +1,5 @@
 #import "NewsCell.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation NewsCell
 @synthesize title = _title;
@@ -19,27 +20,27 @@
     return cell;
 }
 
-- (void)drawRect:(CGRect)rect
+- (UIColor *)lightBackgroundStop
 {
-    CGContextRef currentContext = UIGraphicsGetCurrentContext();
-
-    CGGradientRef glossGradient;
-    CGColorSpaceRef rgbColorspace;
-    size_t num_locations = 2;
-    CGFloat locations[2] = { 0.0, 1.0 };
-    CGFloat components[8] = {
-        1.0, 1.0, 1.0, 1.0,  // Start color
-        0.933, 0.933, 0.933, 1.0 }; // End color
-
-    rgbColorspace = CGColorSpaceCreateDeviceRGB();
-    glossGradient = CGGradientCreateWithColorComponents(rgbColorspace, components, locations, num_locations);
-
-    CGRect currentBounds = self.bounds;
-    CGPoint topCenter = CGPointMake(CGRectGetMidX(currentBounds), 0.0f);
-    CGPoint lowCenter = CGPointMake(CGRectGetMidX(currentBounds), CGRectGetHeight(currentBounds));
-    CGContextDrawLinearGradient(currentContext, glossGradient, topCenter, lowCenter, 0);
-
-    CGGradientRelease(glossGradient);
-    CGColorSpaceRelease(rgbColorspace);
+    return [UIColor whiteColor];
 }
+
+- (UIColor *)darkBackgroundStop
+{
+    static float darkGrayComponent = 0.922;
+    return [UIColor colorWithRed:darkGrayComponent
+                           green:darkGrayComponent
+                            blue:darkGrayComponent
+                           alpha:1.0];
+}
+
+- (void)awakeFromNib
+{
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = self.bounds;
+    gradient.colors = @[(id)[[self lightBackgroundStop] CGColor],
+                        (id)[[self darkBackgroundStop] CGColor]];
+    [self.layer insertSublayer:gradient atIndex:0];
+}
+
 @end
