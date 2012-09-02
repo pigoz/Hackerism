@@ -6,5 +6,6 @@
 @property(nonatomic, weak) IBOutlet UILabel *details;
 @property(nonatomic, weak) IBOutlet UILabel *url;
 
-+ (NewsCell *)fromNib;
++ (NewsCell *)cellWithIdentifier:(NSString *)identifier
+                    forTableView:(UITableView*)tableView;
 @end

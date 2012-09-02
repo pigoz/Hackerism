@@ -6,10 +6,17 @@
 @synthesize details = _details;
 @synthesize url = _url;
 
-+ (NewsCell *)fromNib
++ (NewsCell *)cellWithIdentifier:(NSString *)identifier
+                    forTableView:(UITableView*)tableView
 {
-    NSArray *nibFileEntries = [[NSBundle mainBundle] loadNibNamed:@"NewsCell" owner:nil options:nil];
-    return nibFileEntries[0];
+    NewsCell *cell = (NewsCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        [tableView registerNib:[UINib nibWithNibName:@"NewsCell" bundle:nil]
+        forCellReuseIdentifier:identifier];
+        cell = (NewsCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+    }
+
+    return cell;
 }
 
 - (void)drawRect:(CGRect)rect

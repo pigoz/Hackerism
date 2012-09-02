@@ -63,8 +63,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"newsIdentifier";
-    NewsCell *cell =  (NewsCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (!cell) cell = [NewsCell fromNib];
+    NewsCell *cell = [NewsCell cellWithIdentifier:cellIdentifier
+                                     forTableView:tableView];
     
     NSDictionary *newsItem = self.items[indexPath.row];
     cell.title.text = newsItem[@"title"];
