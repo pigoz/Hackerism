@@ -8,12 +8,12 @@
 @synthesize reloading = _reloading;
 @synthesize hud = _hud;
 
-#define HOME_URL @"http://hndroidapi.appspot.com/news/format/json/page/?appid=hackerism"
+#define __HOME_URL @"http://hndroidapi.appspot.com/news/format/json/page/?appid=hackerism"
 
 - (void)reloadData
 {
     [self startReloadTableViewDataSource];
-    NSURL *url = [NSURL URLWithString:HOME_URL];
+    NSURL *url = [NSURL URLWithString:__HOME_URL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFJSONRequestOperation *fop = [AFJSONRequestOperation
         JSONRequestOperationWithRequest:request
