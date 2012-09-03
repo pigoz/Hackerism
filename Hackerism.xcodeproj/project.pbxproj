@@ -29,7 +29,6 @@
 		7BB5A8E015E8F239002318E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BB5A8DE15E8F239002318E0 /* InfoPlist.strings */; };
 		7BB5A8E315E8F239002318E0 /* HackerismTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5A8E215E8F239002318E0 /* HackerismTests.m */; };
 		7BB7380A15EA344000B1DAEB /* NewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7380915EA344000B1DAEB /* NewsListController.m */; };
-		7BB7380C15EA698600B1DAEB /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BB7380B15EA698600B1DAEB /* NewsCell.xib */; };
 		7BB7381015EA6FD300B1DAEB /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7380F15EA6FD300B1DAEB /* NewsCell.m */; };
 		A72A35D43A914FBBB539C8C1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA13D426446460D91633F3C /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -76,7 +75,6 @@
 		7BB5A8EC15E8FB40002318E0 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		7BB7380815EA344000B1DAEB /* NewsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListController.h; path = Hackerism/Controllers/NewsListController.h; sourceTree = SOURCE_ROOT; };
 		7BB7380915EA344000B1DAEB /* NewsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListController.m; path = Hackerism/Controllers/NewsListController.m; sourceTree = SOURCE_ROOT; };
-		7BB7380B15EA698600B1DAEB /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		7BB7380E15EA6FD300B1DAEB /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
 		7BB7380F15EA6FD300B1DAEB /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		D3827FE112D7439C9F984E43 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -175,7 +173,6 @@
 				7BB5A8CD15E8F238002318E0 /* AppDelegate.m */,
 				7BB5A8C415E8F238002318E0 /* Supporting Files */,
 				7B31FA8F15E902ED00AD756B /* iPhone.storyboard */,
-				7BB7380B15EA698600B1DAEB /* NewsCell.xib */,
 			);
 			path = Hackerism;
 			sourceTree = "<group>";
@@ -295,7 +292,6 @@
 			files = (
 				7BB5A8C815E8F238002318E0 /* InfoPlist.strings in Resources */,
 				7B31FA9015E902ED00AD756B /* iPhone.storyboard in Resources */,
-				7BB7380C15EA698600B1DAEB /* NewsCell.xib in Resources */,
 				7B67043115EA7EED000B7EA7 /* error.png in Resources */,
 				7B67043215EA7EED000B7EA7 /* error@2x.png in Resources */,
 				7B67043F15EACF58000B7EA7 /* whiteArrow.png in Resources */,
