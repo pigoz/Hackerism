@@ -17,6 +17,7 @@
 		7B67043215EA7EED000B7EA7 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043015EA7EED000B7EA7 /* error@2x.png */; };
 		7B67043F15EACF58000B7EA7 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043D15EACF58000B7EA7 /* whiteArrow.png */; };
 		7B67044015EACF58000B7EA7 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043E15EACF58000B7EA7 /* whiteArrow@2x.png */; };
+		7B90D82215F54E5200DE4060 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90D82115F54E5200DE4060 /* NewsDetailViewController.m */; };
 		7BB5A8BE15E8F238002318E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BD15E8F238002318E0 /* UIKit.framework */; };
 		7BB5A8C015E8F238002318E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BF15E8F238002318E0 /* Foundation.framework */; };
 		7BB5A8C215E8F238002318E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8C115E8F238002318E0 /* CoreGraphics.framework */; };
@@ -56,6 +57,8 @@
 		7B67043015EA7EED000B7EA7 /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
 		7B67043D15EACF58000B7EA7 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
 		7B67043E15EACF58000B7EA7 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		7B90D82015F54E5200DE4060 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailViewController.h; path = Hackerism/Controllers/NewsDetailViewController.h; sourceTree = SOURCE_ROOT; };
+		7B90D82115F54E5200DE4060 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailViewController.m; path = Hackerism/Controllers/NewsDetailViewController.m; sourceTree = SOURCE_ROOT; };
 		7BB5A8B915E8F238002318E0 /* Hackerism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackerism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB5A8BD15E8F238002318E0 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BB5A8BF15E8F238002318E0 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +111,8 @@
 		7B31FA8B15E901F900AD756B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7B90D82015F54E5200DE4060 /* NewsDetailViewController.h */,
+				7B90D82115F54E5200DE4060 /* NewsDetailViewController.m */,
 				7BB7380815EA344000B1DAEB /* NewsListController.h */,
 				7BB7380915EA344000B1DAEB /* NewsListController.m */,
 			);
@@ -353,6 +358,7 @@
 				7BB7380A15EA344000B1DAEB /* NewsListController.m in Sources */,
 				7BB7381015EA6FD300B1DAEB /* NewsCell.m in Sources */,
 				7B67042D15EA7D33000B7EA7 /* NetworkHUD.m in Sources */,
+				7B90D82215F54E5200DE4060 /* NewsDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

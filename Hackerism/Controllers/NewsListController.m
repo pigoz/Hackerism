@@ -1,4 +1,6 @@
 #import "NewsListController.h"
+#import "NewsDetailViewController.h"
+
 #import "AFNetworking.h"
 #import "../Views/NewsCell.h"
 
@@ -45,6 +47,17 @@
         [self.tableView addSubview:thview];
         _refreshHeaderView = thview;
 	}
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"NewsDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        NSDictionary *selectedItem  = self.items[indexPath.row];
+        NewsDetailViewController *detailsViewController = [segue destinationViewController];
+        detailsViewController.title = selectedItem[@"title"];
+        detailsViewController.url = selectedItem[@"url"];
+    }
 }
 
 - (NSString *)shortPostedAgo: (NSString *) postedAgo

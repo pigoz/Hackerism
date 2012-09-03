@@ -60,6 +60,7 @@
                                     <outlet property="time" destination="IfE-lt-c54" id="6gE-v4-GG2"/>
                                     <outlet property="title" destination="lOi-nr-rfd" id="C2X-VO-m29"/>
                                     <outlet property="url" destination="7aC-J6-4zy" id="afe-hR-9he"/>
+                                    <segue destination="pEV-jq-3Ju" kind="push" identifier="NewsDetail" id="sci-OX-C1V"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -70,6 +71,31 @@
             </objects>
             <point key="canvasLocation" x="7" y="-368"/>
         </scene>
+        <!--News Detail View Controller - Detail-->
+        <scene sceneID="tAh-NU-KMo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEE-Aj-CAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="pEV-jq-3Ju" customClass="NewsDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a9o-dk-4pl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="Iqq-KC-Ppd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="LhS-UM-6BH"/>
+                    <connections>
+                        <outlet property="webView" destination="Iqq-KC-Ppd" id="0dX-iV-9f2"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="441" y="-368"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="X9E-Ow-HdK">
             <objects>
@@ -77,7 +103,7 @@
                 <navigationController definesPresentationContext="YES" id="UxO-Dj-QdH" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eAn-Mc-7Tq">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="27X-zC-TcF" kind="relationship" relationship="rootViewController" id="0Ll-wS-szM"/>
@@ -95,6 +121,12 @@
                 <relationship kind="outlet" name="time" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="title" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="url" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NewsDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="NewsListController" superclassName="UITableViewController">
