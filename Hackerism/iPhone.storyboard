@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
-        <!--News List Controller - Hackerism-->
+        <!--News List Controller - HN Homepage-->
         <scene sceneID="AJL-PG-dWa">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31x-Wi-BIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,14 +60,18 @@
                                     <outlet property="time" destination="IfE-lt-c54" id="6gE-v4-GG2"/>
                                     <outlet property="title" destination="lOi-nr-rfd" id="C2X-VO-m29"/>
                                     <outlet property="url" destination="7aC-J6-4zy" id="afe-hR-9he"/>
-                                    <segue destination="pEV-jq-3Ju" kind="push" identifier="NewsDetail" id="sci-OX-C1V"/>
+                                    <segue destination="pEV-jq-3Ju" kind="push" identifier="HomeDetail" id="sci-OX-C1V"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Hackerism" id="qpF-R0-obt"/>
+                    <navigationItem key="navigationItem" title="HN Homepage" id="qpF-R0-obt"/>
+                    <connections>
+                        <outlet property="url" destination="f9w-t2-o5p" id="lSg-6n-XVV"/>
+                    </connections>
                 </tableViewController>
+                <customObject id="f9w-t2-o5p" customClass="WSHOMEURL"/>
             </objects>
             <point key="canvasLocation" x="737" y="-268"/>
         </scene>
@@ -94,22 +98,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1171" y="-268"/>
-        </scene>
-        <!--View Controller - Latest-->
-        <scene sceneID="9Da-yH-QNp">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eAC-fK-nQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="NUR-TF-ztk" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0r8-n2-3O2">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Latest" id="UFw-wH-Cm9"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="275" y="310"/>
+            <point key="canvasLocation" x="1295" y="28"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YjF-1T-xAc">
@@ -124,11 +113,11 @@
                     </tabBar>
                     <connections>
                         <segue destination="UxO-Dj-QdH" kind="relationship" relationship="viewControllers" id="Ztc-du-qXv"/>
-                        <segue destination="NUR-TF-ztk" kind="relationship" relationship="viewControllers" id="BXO-Rq-M93"/>
+                        <segue destination="pac-Wo-2LW" kind="relationship" relationship="viewControllers" id="A49-iJ-M0F"/>
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="-264" y="79"/>
+            <point key="canvasLocation" x="-274" y="28"/>
         </scene>
         <!--Navigation Controller - Home-->
         <scene sceneID="X9E-Ow-HdK">
@@ -145,7 +134,94 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="275" y="-268"/>
+            <point key="canvasLocation" x="297" y="-268"/>
+        </scene>
+        <!--News List Controller - Latest posts-->
+        <scene sceneID="MTt-nQ-FIV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2A-dV-fF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="E6B-9I-fbB" customClass="NewsListController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" rowHeight="84" sectionHeaderHeight="22" sectionFooterHeight="22" id="LIk-s1-Zm7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="newsIdentifier" id="4HP-gZ-5MD" customClass="NewsCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="84"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="17" id="Fo3-dF-DF0">
+                                            <rect key="frame" x="20" y="12" width="241" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" id="8oZ-9A-Y9u">
+                                            <rect key="frame" x="20" y="58" width="280" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" id="bfh-K3-mig">
+                                            <rect key="frame" x="20" y="29" width="280" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" id="6Kg-4e-qcP">
+                                            <rect key="frame" x="269" y="12" width="31" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="details" destination="8oZ-9A-Y9u" id="a2e-of-45z"/>
+                                    <outlet property="time" destination="6Kg-4e-qcP" id="Ckf-eJ-TQ3"/>
+                                    <outlet property="title" destination="Fo3-dF-DF0" id="S4o-5S-6az"/>
+                                    <outlet property="url" destination="bfh-K3-mig" id="xwN-P3-hMa"/>
+                                    <segue destination="pEV-jq-3Ju" kind="push" identifier="LatestDetail" id="0fr-6Z-iMG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Latest posts" id="Ypk-dV-uMX"/>
+                    <connections>
+                        <outlet property="url" destination="XPM-id-GvL" id="e2C-5s-tk6"/>
+                    </connections>
+                </tableViewController>
+                <customObject id="XPM-id-GvL" customClass="WSNEWESTURL"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="330"/>
+        </scene>
+        <!--Navigation Controller - Latest-->
+        <scene sceneID="IZQ-JU-cNE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lp8-SX-j5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="pac-Wo-2LW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Latest" id="ACP-gG-4fg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ea7-7g-f2x">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E6B-9I-fbB" kind="relationship" relationship="rootViewController" id="ATD-sA-isw"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="297" y="330"/>
         </scene>
     </scenes>
     <classes>
@@ -166,6 +242,15 @@
         </class>
         <class className="NewsListController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsListController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="url" candidateClass="NSObject"/>
+            </relationships>
+        </class>
+        <class className="WSHOMEURL" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WSHOMEURL.h"/>
+        </class>
+        <class className="WSNEWESTURL" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WSNEWESTURL.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -173,4 +258,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="0fr-6Z-iMG"/>
+    </inferredMetricsTieBreakers>
 </document>

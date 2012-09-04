@@ -17,6 +17,7 @@
 		7B67043215EA7EED000B7EA7 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043015EA7EED000B7EA7 /* error@2x.png */; };
 		7B67043F15EACF58000B7EA7 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043D15EACF58000B7EA7 /* whiteArrow.png */; };
 		7B67044015EACF58000B7EA7 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B67043E15EACF58000B7EA7 /* whiteArrow@2x.png */; };
+		7B8DDA6515F68A0E007A64B2 /* WSURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DDA6415F68A0E007A64B2 /* WSURL.m */; };
 		7B90D82215F54E5200DE4060 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90D82115F54E5200DE4060 /* NewsDetailViewController.m */; };
 		7BB5A8BE15E8F238002318E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BD15E8F238002318E0 /* UIKit.framework */; };
 		7BB5A8C015E8F238002318E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB5A8BF15E8F238002318E0 /* Foundation.framework */; };
@@ -57,6 +58,8 @@
 		7B67043015EA7EED000B7EA7 /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
 		7B67043D15EACF58000B7EA7 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
 		7B67043E15EACF58000B7EA7 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		7B8DDA6315F68A0E007A64B2 /* WSURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSURL.h; sourceTree = "<group>"; };
+		7B8DDA6415F68A0E007A64B2 /* WSURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSURL.m; sourceTree = "<group>"; };
 		7B90D82015F54E5200DE4060 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailViewController.h; path = Hackerism/Controllers/NewsDetailViewController.h; sourceTree = SOURCE_ROOT; };
 		7B90D82115F54E5200DE4060 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailViewController.m; path = Hackerism/Controllers/NewsDetailViewController.m; sourceTree = SOURCE_ROOT; };
 		7BB5A8B915E8F238002318E0 /* Hackerism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackerism.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +138,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		7B8DDA6215F68A0E007A64B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B8DDA6315F68A0E007A64B2 /* WSURL.h */,
+				7B8DDA6415F68A0E007A64B2 /* WSURL.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7BB5A8AE15E8F238002318E0 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +183,7 @@
 		7BB5A8C315E8F238002318E0 /* Hackerism */ = {
 			isa = PBXGroup;
 			children = (
+				7B8DDA6215F68A0E007A64B2 /* Models */,
 				7BB7380D15EA6BB600B1DAEB /* Views */,
 				7B84809B15E93F0B00997570 /* Resources */,
 				7B31FA8B15E901F900AD756B /* Controllers */,
@@ -359,6 +372,7 @@
 				7BB7381015EA6FD300B1DAEB /* NewsCell.m in Sources */,
 				7B67042D15EA7D33000B7EA7 /* NetworkHUD.m in Sources */,
 				7B90D82215F54E5200DE4060 /* NewsDetailViewController.m in Sources */,
+				7B8DDA6515F68A0E007A64B2 /* WSURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

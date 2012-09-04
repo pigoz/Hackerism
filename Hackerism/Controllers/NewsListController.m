@@ -9,14 +9,12 @@
 @synthesize refreshHeaderView = _refreshHeaderView;
 @synthesize reloading = _reloading;
 @synthesize hud = _hud;
-
-#define __HOME_URL @"http://hndroidapi.appspot.com/news/format/json/page/?appid=hackerism"
+@synthesize url = _url;
 
 - (void)reloadData
 {
     [self startReloadTableViewDataSource];
-    NSURL *url = [NSURL URLWithString:__HOME_URL];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[self.url url]];
     AFJSONRequestOperation *fop = [AFJSONRequestOperation
         JSONRequestOperationWithRequest:request
         success:^(NSURLRequest *req, NSHTTPURLResponse* resp, id json) {
@@ -51,7 +49,8 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"NewsDetail"]) {
+    if ([[segue identifier] isEqualToString:@"HomeDetail"] ||
+        [[segue identifier] isEqualToString:@"LatestDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         NSDictionary *selectedItem  = self.items[indexPath.row];
         NewsDetailViewController *detailsViewController = [segue destinationViewController];
