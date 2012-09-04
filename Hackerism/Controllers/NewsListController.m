@@ -57,6 +57,7 @@
         NewsDetailViewController *detailsViewController = [segue destinationViewController];
         detailsViewController.title = selectedItem[@"title"];
         detailsViewController.url = selectedItem[@"url"];
+        detailsViewController.hidesBottomBarWhenPushed = YES; //hide tab bar on
     }
 }
 
